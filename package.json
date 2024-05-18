@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start:pub": "node publisher/index.js",
-    "start:sub": "node subscriber/index.js",
+    "start:pub": "nodemon publisher/index.js",
+    "start:sub": "nodemon subscriber/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,5 +14,8 @@
   "dependencies": {
     "fastify": "^4.27.0",
     "ioredis": "^5.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
